@@ -89,21 +89,23 @@ def main(loops):
         Start_Time = int(time() * 1000)
         # The core:
         Decklist = {
-            "Veteran Explorer" : 4, 
-            "Cabal Therapy" : 4,
+            "Stoneforge Mystic" : 4, 
+            "Batterskull" : 1,
+            "Sword of Feast and Famine" : 1,
+            "Embercleave" : 1
             }
 
         # Color Picking
         DeckWhite = DeckBlue = DeckRed = False
-        Colors_list = ("GB","GB","GB","GBW","GBW","GBW","BUG","BUG","Jund","Jund","NotRed","WUBRG")
+        Colors_list = ("RGW","NotBlack","NotBlue","GW","GR","RW","WUBRG")
         Colors = random.choice(Colors_list) # This is hackier, but more adaptable than using weighted random lists.
-        if Colors == "BUG" or Colors == "NotRed" or Colors == "WUBRG":
+        if Colors == "NotBlack" or Colors == "WUBRG":
             DeckBlue = True
 
-        if Colors == "GBW" or Colors == "NotRed" or Colors == "WUBRG":
+        if Colors == "RGW" or Colors == "NotBlack" or Colors == "NotBlue" or Colors == "GW" or Colors=="RW" or Colors=="WUBRG":
             DeckWhite = True
 
-        if Colors == "Jund" or Colors == "WUBRG":
+        if Colors == "RGW" or Colors == "NotBlack" or Colors == "NotBlue" or Colors == "RG" or Colors=="RW" or Colors=="WUBRG":
             DeckRed = True
 
         # Import Card Database into card objects
