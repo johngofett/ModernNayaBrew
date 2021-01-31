@@ -1,5 +1,5 @@
-# NicFitBrew
-So, you wanna build some nic fit decks?  This script will do it for you.  sort of.
+# NayaBrew
+So, you wanna build some Naya decks?  This script will do it for you.  sort of.
 
 # "Set up"
 First, you need to run the "List_generator.py" With your input.txt.
@@ -13,3 +13,7 @@ If you want to skip that, I've also included the Card_Database.txt that I last g
 # Brewing
 To brew, just run the Brew.py script, and tell it how many decks you want.  if you ask for 1, it'll just output in the display.  any more than that makes files.
 If outputting to files, you need to make the directories for yourself, because I'm lazy and didn't make the script make them for you.
+
+# Thanks 
+
+Thanks to the folks behind NicFitBrew.net, which this is all based on.
